@@ -57,7 +57,7 @@ public class FlightDAO {
      * String sql = "select * from TableName where ColumnName = ?";
      * The question marks will be filled in by the preparedStatement setString, setInt, etc methods. they follow
      * this format, where the first argument identifies the question mark to be filled (left to right, starting
-     * from zero) and the second argument identifies the value to be used:
+     * from one) and the second argument identifies the value to be used:
      * preparedStatement.setInt(1,int1);
      *
      * @param id a flight ID.
@@ -97,7 +97,7 @@ public class FlightDAO {
      * String sql = "insert into TableName (ColumnName1, ColumnName2) values (?, ?);";
      * The question marks will be filled in by the preparedStatement setString, setInt, etc methods. they follow
      * this format, where the first argument identifies the question mark to be filled (left to right, starting
-     * from zero) and the second argument identifies the value to be used:
+     * from one) and the second argument identifies the value to be used:
      * preparedStatement.setString(1,string1);
      * preparedStatement.setString(2,string2);
      *
@@ -135,7 +135,7 @@ public class FlightDAO {
      * String sql = "update TableName set ColumnName1=?, ColumnName2=? where ColumnName3 = ?;";
      * The question marks will be filled in by the preparedStatement setString, setInt, etc methods. they follow
      * this format, where the first argument identifies the question mark to be filled (left to right, starting
-     * from zero) and the second argument identifies the value to be used:
+     * from one) and the second argument identifies the value to be used:
      * preparedStatement.setString(1,string1);
      * preparedStatement.setString(2,string2);
      * preparedStatement.setInt(3,int1);
@@ -168,7 +168,7 @@ public class FlightDAO {
      * "select * from TableName where ColumnName1 = ? and ColumnName2 = ?;";
      * The question marks will be filled in by the preparedStatement setString, setInt, etc methods. they follow
      * this format, where the first argument identifies the question mark to be filled (left to right, starting
-     * from zero) and the second argument identifies the value to be used:
+     * from one) and the second argument identifies the value to be used:
      * preparedStatement.setString(1,"column 1 value");
      * preparedStatement.setString(2,"column 2 value");
      *
